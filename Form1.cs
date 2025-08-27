@@ -19,7 +19,7 @@ namespace MetricConverter
 
         public double input = 0.0;
         public double convertedValue = 0.0;
-        public double multiplier = 0.453592;
+        public double multiplier = 0.453592; 
 
         private void convertKG_Click(object sender, EventArgs e)
         {
@@ -27,6 +27,16 @@ namespace MetricConverter
             convertedValue = input * multiplier;
 
             resultBox.Text = convertedValue.ToString();
+            lbsInput.Text = "";
+        }
+
+        private void convertLBS_Click(object sender, EventArgs e)
+        {
+            input = (double)kgInput.Value;
+            convertedValue = input / multiplier;
+
+            resultBox.Text = convertedValue.ToString();
+            kgInput.Text = "";
         }
     }
 }

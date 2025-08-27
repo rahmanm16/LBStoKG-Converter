@@ -33,7 +33,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.resultBox = new System.Windows.Forms.TextBox();
+            this.kgInput = new System.Windows.Forms.NumericUpDown();
+            this.convertLBS = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.lbsInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kgInput)).BeginInit();
             this.SuspendLayout();
             // 
             // lbsInput
@@ -83,11 +87,45 @@
             this.resultBox.Size = new System.Drawing.Size(340, 20);
             this.resultBox.TabIndex = 7;
             // 
+            // kgInput
+            // 
+            this.kgInput.Location = new System.Drawing.Point(90, 212);
+            this.kgInput.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.kgInput.Name = "kgInput";
+            this.kgInput.Size = new System.Drawing.Size(165, 20);
+            this.kgInput.TabIndex = 8;
+            // 
+            // convertLBS
+            // 
+            this.convertLBS.Location = new System.Drawing.Point(344, 212);
+            this.convertLBS.Name = "convertLBS";
+            this.convertLBS.Size = new System.Drawing.Size(191, 23);
+            this.convertLBS.TabIndex = 9;
+            this.convertLBS.Text = "Convert into lbs";
+            this.convertLBS.UseVisualStyleBackColor = true;
+            this.convertLBS.Click += new System.EventHandler(this.convertLBS_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(87, 196);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "KGs:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 479);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.convertLBS);
+            this.Controls.Add(this.kgInput);
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -96,6 +134,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.lbsInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kgInput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,6 +147,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox resultBox;
+        private System.Windows.Forms.NumericUpDown kgInput;
+        private System.Windows.Forms.Button convertLBS;
+        private System.Windows.Forms.Label label3;
     }
 }
 
