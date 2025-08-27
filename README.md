@@ -23,6 +23,6 @@ Built in C# with .NET 6.0 for demonstration and quick utility purposes.
 Clone the repository and run the project:
 
 ```bash
-git clone https://github.com/your-username/lbs-kg-converter.git
+git clone https://github.com/rahmanm16/lbs-kg-converter.git
 cd lbs-kg-converter/src
 dotnet run
